@@ -23,5 +23,6 @@ def login_fuzz():
         print("通过试探，发现登录后台页面对单引号不敏感")
 
 
+        
 if __name__ == '__main__':
     login_fuzz()
