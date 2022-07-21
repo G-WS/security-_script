@@ -5,7 +5,7 @@ import requests
 
 def login_fuzz():
     # 先使用单引号进行试探
-    url = 'http://192.168.2.128/Security/login.php'
+    url = 'http://xxxxxxxxxxxxxxxxxxxxxxxx/xxxx.php'
     data = {'username': "'", 'password': '21343', 'vcode': '0000'}
     resp = requests.post(url=url, data=data)
     # print(resp.text)
