@@ -39,26 +39,22 @@ def xss_scan(location):
 #该方法有问题，因为该方法提出的判断方法不够准确，如果作为字符串存在其中，则有问题
 
 if __name__=='__main__':
-    # xss_scan('http://192.168.2.128/xss/level2.php?keyword=test')
-    # xss_scan('http://192.168.2.128/xss/level1.php?name=test')
-    # xss_scan('http://192.168.2.128/xss/level3.php?keyword=test')
-    # xss_scan('http://192.168.2.128/xss/level4.php?keyword=test')
-    # xss_scan('http://192.168.2.128/xss/level5.php?keyword=test')
-    # xss_scan('http://192.168.2.128/xss/level11.php?keyword=test')
-    source='http://192.168.2.128/xss/level17.php?arg01=aaa&arg02=bbb'
-    url = source.split('?')[0]
-    param_list = source.split('?')[1].split('&')
-    # print(param_list)
+   
+    xss_scan('http://xxxxxxxxxxxx/xss/level11.php?keyword=test')
+#     source='http://192.168.2.128/xss/level17.php?arg01=aaa&arg02=bbb'
+#     url = source.split('?')[0]
+#     param_list = source.split('?')[1].split('&')
+#     # print(param_list)
 
-    with open('../dict/xss-payload.txt') as file:
-        payload_list = file.readlines()
+#     with open('../dict/xss-payload.txt') as file:
+#         payload_list = file.readlines()
 
-    for payload in payload_list:
-        params={}
-        for param in param_list:
-            key=param.split('=')[0]
-            params[key] = payload.strip().split(':',1)[1]
-        print(params)
+#     for payload in payload_list:
+#         params={}
+#         for param in param_list:
+#             key=param.split('=')[0]
+#             params[key] = payload.strip().split(':',1)[1]
+#         print(params)
     # print(str_html("javascript:alert(8)"))
     # source="hello world hello world"
     # index = source.find('world')
